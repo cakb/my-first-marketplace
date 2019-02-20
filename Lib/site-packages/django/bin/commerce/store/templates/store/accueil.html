@@ -1,0 +1,17 @@
+{%extends "base.html" %}
+{% load static %}
+{% block body %}	
+<h2>Avec Skerli,le client est roi!!!</h2>
+{% for pub in pub %}
+    <div class="soul"><img class="mySlides" src="{{pub.picture.url}}" width="500" height="200"/></div>
+ {% endfor %}
+ <h2 class="nidi">Nos catégories</h2>
+ {% for categorie in categorie %}
+<a href="{% url "store:categorie" categorie.id %}">{{categorie.name}}</a>
+<a href="{% url "store:categorie" categorie.id %}"><img class="balboa" src="{{categorie.icone.url}}" /></a>
+{% endfor %}
+<h2 class="ali">Dernières nouveautés</h2>
+{% for product in product %}
+ <a href="{% url "store:detail" product.id %}"><img  class="boni" src="{{product.image.url}}" /></a>
+  {% endfor %}
+{% endblock %}

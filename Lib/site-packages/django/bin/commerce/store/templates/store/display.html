@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load static  %}
+{% block title%}Catégories disponible dans le rayon{% endblock %}
+{% block body %}
+{% for categorie in categorie %}
+<a href="{% url "store:categorie" categorie.id %}">{{categorie.name}}</a>
+<a href="{% url "store:categorie" categorie.id %}"><img class="balboa" src="{{categorie.icone.url}}" /></a>
+{% endfor %}
+{% endblock %}

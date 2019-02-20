@@ -1,0 +1,27 @@
+h1
+{
+     color:white;
+     background-color:red;
+     border:1px solid red;  
+}
+p
+{
+    font-size:1.2em;
+    font-style:italic;
+}
+.lili
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+}
+button
+{
+    background-color:red;
+    width:10em;
+}
+#conteneur
+{    
+    display:flex;
+    flex-wrap:wrap;  
+}

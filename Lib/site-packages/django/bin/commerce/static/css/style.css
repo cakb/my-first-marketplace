@@ -1,0 +1,188 @@
+.firo
+{
+    border:2px solid red;
+    background-color:red;
+}
+h1.vie
+{
+    display:flex;
+    justify-content: flex-start;
+    color:white;
+    font-size:20px;
+}
+.petit
+{
+    display:flex;
+    justify-content:flex-bottom;
+    font-size:12px;
+    font-style:italic;   
+}
+ul
+{
+	color:black;
+	list-style-type:none;
+	display:flex;
+	justify-content:flex-start;
+        flex-nowrap:nowrap;
+}
+li 
+{
+	margin-right:15px;	
+}
+a
+{
+	text-decoration:none;
+	color:black;
+}
+h2
+{
+       color:white;
+       border:1px solid red;
+       background-color:red;
+}
+.boni
+{     
+     width:100px;
+     height:100px;       
+}
+.soul
+{
+     display:flex;
+     flex-direction:row;
+     justify-content:center;
+     align-items:center;
+     width:auto;
+     height:auto;
+}
+.tor
+{
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     width:auto;
+     height:auto;  
+}
+.scalpel
+{
+    color:blue;
+    font-size:1.2em;
+    font-style:initial;
+}
+.kel
+{
+    color:red;
+    font-size:1.1em;
+    font-style:oblique;
+}
+.ouilsou
+{
+    color:blue;
+    font-size:1.1em;
+    font-style:initial;
+}
+.dicken
+{
+   font-size:1.2em;
+   font-style:initial;
+}
+.dess
+{
+   
+   border:2px solid red;
+   background-color:red;
+}
+.nili
+{
+   color:black;
+   font-style:italic;
+   font-size:1.2em;
+}
+.dili
+{
+   border:2px solid red;
+   background-color:red;
+}
+.zol
+{
+   color:black;
+   font-style:initial;
+   font-size:1.1em;
+}
+.leno
+{   
+   border:2px solid red;
+   background-color:red;
+}
+.notre
+{
+   color:black;
+   font-style:initial;
+   font-size:1.1em;
+}
+.rodou
+{
+   border:2px solid red;
+   background-color:red;
+}
+.rideau
+{
+   color:black;
+   font-style:initial;
+   font-size:1.1em; 
+}
+.sto
+{   
+   border:2px solid red;
+   background-color:red;
+}
+.stoul
+{
+   color:black;
+   font-style:initial;
+   font-size:1.1em;  
+}
+.buti
+{
+   background-color:red;
+   position:relative;
+   bottom:10px;
+}
+#cloclo
+{
+   display:flex;
+   flex-direction:column;
+   color:blue;
+   font-style:italic;
+   font-size:1.2em;
+
+}
+.balboa
+{
+   width:20px;
+   height:20px;
+}
+.tatiana
+{
+   display:flex;
+   width:100px;
+   height:100px;
+}
+#kless
+{
+  display:flex;
+  flex-direction:column;
+  color:blue;
+  font-style:italic;
+  font-size:1.2em;
+}
+.tritri
+{   
+   border:2px solid red;
+   background-color:red;
+}
+.diza
+{
+   color:black;
+   font-style:initial;
+   font-size:1.1em;
+}

@@ -1,0 +1,24 @@
+{% load static %}
+<!Doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width,initiale-scale=1"/>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+	<link rel="stylesheet" href="{% static "store/lo.css"%}"/>	
+	<meta name="theme-color" content="red"/>
+	<link rel="icon" href="{% static "store/favicon.ico" %}">
+	<title>Page de validation des commandes</title>
+</head>
+<body>
+	<h1>Votre commande a été validée <img src="{% static "store/validate.png" %}" titre="chez nous le client est roi"/></h1>
+	<p>Merci d'avoir choisi le site Skerli.com pour vos achats.Vous recevrez prochainement un appel ou un sms  de la part d'un agent de Skerli pour vous spécifier le moment de votre livraison.Avec skerli,le client est roi<img src="{% static "store/king1.png" %}" class="lili" title="Chez Skerli,le client est roi" alt="king"/></p><a href="{% url ""%}"><button>Retour vers accueil</button></a></p>
+<div id="conteneur">
+	<div class="element"><img src="{% static "store/woman.jpg" %}" width="110em" height="110em"/> </div>
+	<div class="element"><img src="{% static "store/business.jpg" %}" width="110em" height="110em"/></div> 
+	<div class="element"><img src="{% static "store/success.jpg" %}" width="110em" height="110em"/></div>
+</div>
+</body>
+</html>

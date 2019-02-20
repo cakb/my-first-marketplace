@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static  %}
+{% block title%}Produits contenus dans la catégorie{% endblock %}
+{% block body %}
+<h2>Les produits présents dans la gamme {{categorie.name}}</h2>
+{% for product in product %}
+
+<a href="{% url "store:detail" product.id %}"><img class="tatiana" src="{{product.image.url}}" /></a>
+<div id="kless">
+<a  class="prili" href="{% url "store:detail" product.id %}">{{product.name}}</a>
+<div class="prili">{{product.price}}FCFA</div>
+</div>
+{% endfor %}
+{% endblock %}

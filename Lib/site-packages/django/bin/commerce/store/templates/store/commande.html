@@ -1,0 +1,26 @@
+{% load static %}
+<!Doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width,initiale-scale=1"/>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+	<link rel="stylesheet" href="{% static "store/colire.css"%}"/>	
+	<meta name="theme-color" content="red"/>
+	<link rel="icon" href="{% static "store/favicon.ico" %}">
+	<title>Remplissage du formulaire d'envoi</title>
+</head>
+<body>
+	<h1 class="zine">Remplissez le formulaire d'envoi pour passer votre commande</h1>
+
+	<form action="{% url "store:commande" product_id=product_id  %}" method="post" class="soccer">
+
+    {% csrf_token %}
+    {{ form.as_p }}
+
+  <input class="dili" type="submit" value="Envoyer"/>
+</form>
+</body>
+</html>

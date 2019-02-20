@@ -1,0 +1,16 @@
+.zine
+{
+   border-radius:10px 10px 10px 10px;
+   background-color:red;
+}
+.soccer
+{
+   display:flex;
+   flex-direction:column;
+   width:2px;
+}
+.dili
+{
+    width:100px;
+    background-color:red;
+}

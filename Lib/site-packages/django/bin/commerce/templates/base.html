@@ -1,0 +1,58 @@
+{% load static %}
+<!Doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width,initiale-scale=1"/>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+	<link rel="stylesheet" href="{% static "css/style.css" %}"/>
+	<link rel="stylesheet" href="{% static "css/tete.css" %}"/>
+	<link rel="stylesheet" href="{% static "css/pied.css" %}"/>
+	<meta name="theme-color" content="red"/>
+	<link rel="icon" href="{% static "favicon.ico" %}">
+	<title>{% block title %}Skerli,le client est roi{%endblock%}</title>
+</head>
+<body>
+	<div class="firo"><h1 class="vie">SKERLI!leader du ecommerce africain</h1>
+		<form action="{% url "store:search" %}" method="GET">
+
+    {% csrf_token %}
+    {{ form.as_p }}
+
+  <input type="search" placeholder="Tapez le nom du produit recherché" size="30" maxLength="30" name="query"/>
+</form>
+	<p>
+          <ul>
+              <img  class="minou" src="{% static "shopi.png"%}"/><li><a href="">BuyMore</a></li>
+              <img class="titi" src="{% static "shopi.png"%}"/><li><a href="http://skerly.com">BuyBig</a></li>
+          </ul> 
+        </p>
+     </div>
+    
+		
+			<p class="cil"><a href="{% url "store:display" %}"><button style="background-color:red;color:white;width:100px;">Catégories</button></a></p>
+        
+        
+
+	
+
+	
+
+{% block body %} {% endblock %}
+
+<script src="{% static "javascripts/cours.js"%}"></script>
+<div class="biz">
+		<div class="bas"><a href="{% url "store:confidentialite" %}"><strong>Conditions d'utilisation</strong></a></div>
+		<div class="bas"><a href="{% url "store:about" %}"><strong>A propos</strong></a></div>
+		<div class="bas">copyright 2018 by Skerli-corporation-Tous droits réservés</div>
+	</div>
+
+</body>
+</html>
+
+
+
+
+

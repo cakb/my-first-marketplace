@@ -1,0 +1,27 @@
+{% extends "base.html" %} 
+{% load static %}
+{% block title %}Les details des produits{% endblock%}
+{% block body %}
+
+<a href="{% url 'store:commande' product.id %}"><button class="buti">Commander pour {{product.price}}fcfa</button></a>
+
+{% for carousel in carousel %}
+  <div class="tor" ><img class="mySlides" src="{{ carousel.product_photo.url}}" width="200" height="200"/></div>
+   {% endfor %}
+   <div id="cloclo">
+   <div class="mabo">{{product.name}}</div>
+   <div class="mabo">{{product.short}}</div>
+ </div>
+ <h1 class="dess">Détails du produit</h1>
+      <p class="nili">{{product.long}}</p>
+ <h1 class="dili">Prix du marché</h1>
+     <p class="zol">{{product.price1}}fcfa</p>
+ <h1 class="leno">Prix sur Skerli</h1>
+     <p class="notre">{{product.price}}fcfa</p>
+ <h1 class="rodou">Réductions</h1>
+     <p class="rideau">{{product.reduction}}%</p>
+ <h1 class="sto">Stocks</h1>
+     <p class="stoul">{{product.stock}} en stocks</p>
+ <h1 class="tritri">La livraison</h1>
+     <p class="diza">{{product.livraison}}</p>
+{% endblock %}
